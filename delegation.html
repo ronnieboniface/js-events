@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Event Delegation</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- BUTTONS TO SHOW EVENT DELEGATION -->
+      <div id="helicopter-parent">
+          <div>
+              <br>
+              <div>
+                  <br>
+                  <div>
+                      <p>EVENT DELEGATION</p>
+                      <div> <!-- could have attached event listener here, deep nesting as example -->
+                          <button class="btn alert" data-name="alert">Alert ME</button>
+                          <button class="btn log" data-name="log">Console Log something</button>
+                          <button class="btn error" data-name="error">Console Error</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+  <button id="my-button">CLICK ME</button>
+
+    <script type="text/javascript" src="delegation.js"></script>
+  </body>
+</html>
