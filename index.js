@@ -1,6 +1,7 @@
 // console.log("Hello there!")
-const form = document.getElementById('form');
-const list = document.getElementById('watchlist');
+const netflixForm = document.getElementById('form');
+const watchlist = document.getElementById('watchlist');
+// const listInput = document.getElementById('list-input');
 
 
 
@@ -11,8 +12,9 @@ function handleSubmit(e) {
   button.innerText = "X"
   button.addEventListener('click', handleDelete)
   li.innerText = e.target[0].value;
+  // li.innerText = listInput.value;
   li.append(button);
-  list.append(li);
+  watchlist.append(li);
 };
 
 function handleDelete(e) {
@@ -21,4 +23,4 @@ function handleDelete(e) {
   e.target.parentElement.remove()
 };
 
-form.addEventListener('submit', handleSubmit);
+netflixForm.addEventListener('submit', handleSubmit);
