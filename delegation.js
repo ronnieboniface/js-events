@@ -1,10 +1,10 @@
 function addClickToButtons() {
   const parent = document.getElementById("helicopter-parent");
   parent.addEventListener("click", (event) => {
-      // console.dir(event.target)
+      // console.dir(event.target);
       switch (event.target.dataset.name) {
           case "alert":
-              alert("I was clicked");
+              alert("Aren't alerts annoying?");
               break;
 
           case "log":
@@ -12,12 +12,12 @@ function addClickToButtons() {
               break;
 
           case "error":
-              console.error("I was clicked");
+              console.error("Uh oh!");
               break;
       
           default:
-              console.warn("Something else was clicked");
+              console.warn("We've got a problem.");
               break;
-      }
-  })
-}
+      };
+  });
+};
